@@ -17,7 +17,7 @@
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_tV8AQCHYEfC3g9ZlfBzNfA" name="Home" isXOR="true">
       <annotations text="/"/>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3MjgECHYEfC3g9ZlfBzNfA" name="EBookDisplay" isXOR="true">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3MjgECHYEfC3g9ZlfBzNfA" name="EBookDisplay">
       <viewElements xsi:type="core:ViewContainer" id="_J_R_QCHZEfC3g9ZlfBzNfA" name="EBook Display Page">
         <annotations text="/ebook"/>
         <viewElements xsi:type="ext:List" id="_f7kQYCHZEfC3g9ZlfBzNfA" name="Card EBook">
@@ -38,7 +38,7 @@
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_fjve4CHcEfC3g9ZlfBzNfA" name="DisplayWithImage">
+    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_fjve4CHcEfC3g9ZlfBzNfA" name="DisplayWithImage" isXOR="true">
       <viewElements xsi:type="dop-extension:Delta" id="_hBMUUCHcEfC3g9ZlfBzNfA" name="EBook Display Page With Image">
         <annotations text="/ebook-image"/>
         <viewElements xsi:type="dop-extension:ModifiedList" id="_nWOjwCHcEfC3g9ZlfBzNfA" name="Modified List">
@@ -53,6 +53,53 @@
         <annotations text="/review"/>
         <viewElements xsi:type="ext:List" id="_SR8cMCHdEfCEb5aNlQzcmQ" name="Card Review Item">
           <viewComponentParts xsi:type="core:DataBinding" id="_VQROgCHdEfCEb5aNlQzcmQ" name="Review Item"/>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_tYgkYCHeEfCQeZwIfQ9r8w" name="EbookAccessFreeAccess" isXOR="true">
+      <annotations text="/free-access"/>
+      <viewElements xsi:type="dop-extension:Delta" id="_E-tZoCHfEfCQeZwIfQ9r8w" name="E Book Access Free Access">
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_Y2HMcCHgEfCQeZwIfQ9r8w" name="EBookAccessFreeAccesslIST">
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_0ZBLACHkEfCQeZwIfQ9r8w" name="Modified Data Binding">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_CcUGoCHlEfCQeZwIfQ9r8w" name="Title"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_qpsi0CHgEfCQeZwIfQ9r8w" name="EBookAccessSubscription" isXOR="true">
+      <annotations text="/subscription"/>
+      <viewElements xsi:type="dop-extension:Delta" id="_vv0vICHgEfCQeZwIfQ9r8w" name="E Book Access Subscription">
+        <viewElements xsi:type="dop-extension:ModifiedDetail" id="_fOz3ECHkEfCQeZwIfQ9r8w" name="Modified Detail">
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_1l2xkCHkEfCQeZwIfQ9r8w" name="Modified Data Binding">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_-Dd3ECHkEfCQeZwIfQ9r8w" name="startdate"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_HDhiUCHlEfCQeZwIfQ9r8w" name="Enddate"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_3tfJQCHgEfCQeZwIfQ9r8w" name="EBookAccessPayPerBook" isXOR="true">
+      <annotations text="/pay-per-book"/>
+      <viewElements xsi:type="dop-extension:Delta" id="_7HfyACHgEfCQeZwIfQ9r8w" name="E Book Access Pay Per Book">
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_My2SECHkEfCQeZwIfQ9r8w" name="EBookAccessPayPerBookList">
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_2ISJMCHkEfCQeZwIfQ9r8w" name="Modified Data Binding">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_7QupsCHkEfCQeZwIfQ9r8w" name="Title"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_chakECHhEfCQeZwIfQ9r8w" name="ViewContainer">
+      <annotations text="/ebook-access"/>
+      <viewElements xsi:type="core:ViewContainer" id="_hOIK0CHhEfCQeZwIfQ9r8w" name="EBook Access">
+        <viewElements xsi:type="ext:List" id="_RfcO8CHiEfCQeZwIfQ9r8w" name="Ebook">
+          <viewComponentParts xsi:type="core:DataBinding" id="_r4CTUCHiEfCQeZwIfQ9r8w" name="EBook">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_19xNMCHiEfCQeZwIfQ9r8w" name="Title"/>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="dop-extension:AddedDetail" id="_EFfV0CHjEfCQeZwIfQ9r8w" name="subscription">
+          <viewComponentParts xsi:type="core:DataBinding" id="_JorRkCHjEfCQeZwIfQ9r8w" name="Subscription">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_NSGPUCHjEfCQeZwIfQ9r8w" name="startDate"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_VwqXECHjEfCQeZwIfQ9r8w" name="enddate"/>
+          </viewComponentParts>
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
