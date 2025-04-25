@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_zWROACG3EfCvMe3YX1hBgw">
+  <domainModel id="_zWWGgCG3EfCvMe3YX1hBgw">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zX93ICG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
+      <classifier xsi:type="uml:Class" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_Ga-ZkCGuEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYQyECG3EfCvMe3YX1hBgw" name="apply">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_IqOp8CGvEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zYRZICG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
+      <classifier xsi:type="uml:Class" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_fJWs8CGwEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmYCG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_yXQsQiGwEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmYSG3EfCvMe3YX1hBgw" name="author">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_BFsPkCGxEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmYiG3EfCvMe3YX1hBgw" name="search">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_LQR0QCGxEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmYyG3EfCvMe3YX1hBgw" name="apply">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_bXl2ECGxEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zYdmZCG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
+      <classifier xsi:type="uml:Class" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_Jy7akCGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmZSG3EfCvMe3YX1hBgw" name="title">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_OerYACGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmZiG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_n4hVIiGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmZyG3EfCvMe3YX1hBgw" name="search">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_R3j_YCGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmaCG3EfCvMe3YX1hBgw" name="apply">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_ddrt8CGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zYdmaSG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
+      <classifier xsi:type="uml:Class" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_1a-0kCGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmaiG3EfCvMe3YX1hBgw" name="category">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_5iDXoCGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmayG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_anrfQiG1EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmbCG3EfCvMe3YX1hBgw" name="filter">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_B2QpgCG0EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmbSG3EfCvMe3YX1hBgw" name="apply">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_P-vAECG0EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_zYdmbiG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
+      <classifier xsi:type="uml:Class" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_pFmW0CG0EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmbyG3EfCvMe3YX1hBgw" name="releaseDateFrom">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_tFBZwCG0EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmcCG3EfCvMe3YX1hBgw" name="releaseDateTo">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_0AXbQCG0EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmcSG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_e6v28iG1EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmciG3EfCvMe3YX1hBgw" name="filter">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_5SUdECG0EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_zYdmcyG3EfCvMe3YX1hBgw" name="apply">
+      <behavioralFeature xsi:type="uml:Operation" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_S9lhYCG1EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmdCG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_yXRTUSGwEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmdSG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_n4hVJSGzEfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmdiG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_anrfRSG1EfCj4s3pYeYrjw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_zYdmdyG3EfCvMe3YX1hBgw" name="searchfilterimpl">
+      <structuralFeature xsi:type="uml:Property" href="../smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml#_e6weAiG1EfCj4s3pYeYrjw"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>
