@@ -6,6 +6,14 @@
         <viewComponentParts xsi:type="ext:SimpleField" id="_JhzIICHQEfCJWIXyWmlHDQ" name="SearchField"/>
       </viewElements>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_PfPksCHVEfCzNc21ieZknA" name="WishlistManagement">
+      <viewElements xsi:type="core:ViewContainer" id="_hRyZQCHVEfCzNc21ieZknA" name="Card Wishlist Page">
+        <annotations text="/item/wishlist"/>
+        <viewElements xsi:type="ext:List" id="_wgafkCHVEfCzNc21ieZknA" name="Card Wishlist Item">
+          <viewComponentParts xsi:type="core:DataBinding" id="_6cOocCHVEfCzNc21ieZknA" name="Wishlist Item"/>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_zWWGgCG3EfCvMe3YX1hBgw">
     <domainElements xsi:type="core:UMLDomainConcept" id="_zX93ICG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
