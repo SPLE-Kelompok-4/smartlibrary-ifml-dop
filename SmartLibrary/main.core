@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_zWROACG3EfCvMe3YX1hBgw">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_zWROACG3EfCvMe3YX1hBgw">
   <interactionFlowModel id="_hgyygCG9EfClq5ecsXO2YQ">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_hhKl8CG9EfClq5ecsXO2YQ" name="SearchFilter" isXOR="true">
       <viewElements xsi:type="ext:List" id="_5IxEMCHPEfCJWIXyWmlHDQ" name="SearchList">
@@ -11,6 +11,40 @@
         <annotations text="/item/wishlist"/>
         <viewElements xsi:type="ext:List" id="_wgafkCHVEfCzNc21ieZknA" name="Card Wishlist Item">
           <viewComponentParts xsi:type="core:DataBinding" id="_6cOocCHVEfCzNc21ieZknA" name="Wishlist Item"/>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_tV8AQCHYEfC3g9ZlfBzNfA" name="Home" isXOR="true">
+      <annotations text="/"/>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3MjgECHYEfC3g9ZlfBzNfA" name="EBookDisplay" isXOR="true">
+      <viewElements xsi:type="core:ViewContainer" id="_J_R_QCHZEfC3g9ZlfBzNfA" name="EBook Display Page">
+        <annotations text="/ebook"/>
+        <viewElements xsi:type="ext:List" id="_f7kQYCHZEfC3g9ZlfBzNfA" name="Card EBook">
+          <viewComponentParts xsi:type="core:DataBinding" id="_mKJSgCHZEfC3g9ZlfBzNfA" name="List EBook" uniformResourceIdentifier="call/ebook/list">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ytqdcCHZEfC3g9ZlfBzNfA" name="title EBook" featureConcept="//@domainModel/@domainElements.8"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_z4WH4CHZEfC3g9ZlfBzNfA" name="author EBook" featureConcept="//@domainModel/@domainElements.4"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_5Z7PMCHbEfC3g9ZlfBzNfA" name="DisplayWithPrice" isXOR="true">
+      <viewElements xsi:type="dop-extension:Delta" id="_8M4fACHbEfC3g9ZlfBzNfA" name="EBook Display Page With Price">
+        <annotations text="/ebook-price"/>
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_H098cCHcEfC3g9ZlfBzNfA" name="List EBook With Price">
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_Js5HYCHcEfC3g9ZlfBzNfA" name="Modified Data Binding">
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_UvQBkCHcEfC3g9ZlfBzNfA" name="price"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_fjve4CHcEfC3g9ZlfBzNfA" name="DisplayWithImage">
+      <viewElements xsi:type="dop-extension:Delta" id="_hBMUUCHcEfC3g9ZlfBzNfA" name="EBook Display Page With Image">
+        <annotations text="/ebook-image"/>
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_nWOjwCHcEfC3g9ZlfBzNfA" name="Modified List">
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_pYZP0CHcEfC3g9ZlfBzNfA" name="List EBook With Image">
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_qei_kCHcEfC3g9ZlfBzNfA" name="image"/>
+          </viewComponentParts>
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
