@@ -103,6 +103,7 @@
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_6JCzcCHlEfCaKuf-iBCYnQ" name="CommunityContent" isXOR="true"/>
   </interactionFlowModel>
   <domainModel id="_zWWGgCG3EfCvMe3YX1hBgw">
     <domainElements xsi:type="core:UMLDomainConcept" id="_zX93ICG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
