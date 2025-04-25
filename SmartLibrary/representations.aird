@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_oquGwCG2EfCvMe3YX1hBgw" selectedViews="_31P6wCG3EfCvMe3YX1hBgw _31tNwCG3EfCvMe3YX1hBgw" version="15.2.0.202303281325">
     <semanticResources>main.core</semanticResources>
     <semanticResources>platform:/resource/smartlibrary-uml-dop/SmartLibrary/SmartLibrary.uml</semanticResources>
@@ -12,7 +12,7 @@
     <semanticResources>pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_31P6wCG3EfCvMe3YX1hBgw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__tY7sCG3EfCvMe3YX1hBgw" name="HomePage" repPath="#__tXtkCG3EfCvMe3YX1hBgw" changeId="1745573458852">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RwrIsCG9EfClq5ecsXO2YQ" name="SmartLibrary" repPath="#_RwpTgCG9EfClq5ecsXO2YQ" changeId="1745583875215">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="main.core#/"/>
       </ownedRepresentationDescriptors>
@@ -21,17 +21,77 @@
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.rse.ifml.dop.extension.design/description/dop_extension.odesign#//@ownedViewpoints[name='IFML_DOP_Extension']"/>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <diagram:DSemanticDiagram uid="__tXtkCG3EfCvMe3YX1hBgw">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="__tZiwCG3EfCvMe3YX1hBgw" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="__tZiwSG3EfCvMe3YX1hBgw" type="Sirius" element="__tXtkCG3EfCvMe3YX1hBgw" measurementUnit="Pixel">
-        <styles xmi:type="notation:DiagramStyle" xmi:id="__tZiwiG3EfCvMe3YX1hBgw"/>
+  <diagram:DSemanticDiagram uid="_RwpTgCG9EfClq5ecsXO2YQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_RxF_cCG9EfClq5ecsXO2YQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_RxF_cSG9EfClq5ecsXO2YQ" type="Sirius" element="_RwpTgCG9EfClq5ecsXO2YQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_hjm18CG9EfClq5ecsXO2YQ" type="2002" element="_hhjngCG9EfClq5ecsXO2YQ">
+          <children xmi:type="notation:Node" xmi:id="_hjuKsCG9EfClq5ecsXO2YQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_hjv_4CG9EfClq5ecsXO2YQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_5KSuMCHPEfCJWIXyWmlHDQ" type="3008" element="_5IxrQCHPEfCJWIXyWmlHDQ">
+              <children xmi:type="notation:Node" xmi:id="_5KTVQCHPEfCJWIXyWmlHDQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_5KTVQSHPEfCJWIXyWmlHDQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_JjyFICHQEfCJWIXyWmlHDQ" type="3008" element="_Jh7D8CHQEfCJWIXyWmlHDQ">
+                  <children xmi:type="notation:Node" xmi:id="_JjysMCHQEfCJWIXyWmlHDQ" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_JjysMSHQEfCJWIXyWmlHDQ" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_JjysMiHQEfCJWIXyWmlHDQ"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_JjysMyHQEfCJWIXyWmlHDQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_JjyFISHQEfCJWIXyWmlHDQ" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JjyFIiHQEfCJWIXyWmlHDQ" x="7" y="55" width="519" height="129"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_5KTVQiHPEfCJWIXyWmlHDQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_5KTVQyHPEfCJWIXyWmlHDQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_5KSuMSHPEfCJWIXyWmlHDQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5KSuMiHPEfCJWIXyWmlHDQ" x="19" y="10" width="543" height="309"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_hjv_4SG9EfClq5ecsXO2YQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_hjv_4iG9EfClq5ecsXO2YQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hjm18SG9EfClq5ecsXO2YQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hjm18iG9EfClq5ecsXO2YQ" x="180" y="132" width="591" height="363"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_RxF_ciG9EfClq5ecsXO2YQ"/>
       </data>
     </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="__vJPMCG3EfCvMe3YX1hBgw" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="__vJPMSG3EfCvMe3YX1hBgw"/>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_RzEVYCG9EfClq5ecsXO2YQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_RzEVYSG9EfClq5ecsXO2YQ"/>
     </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_hhjngCG9EfClq5ecsXO2YQ" name="[XOR] «ViewContainer» SearchFilter" tooltipText="ViewContainer SearchFilter" width="30" height="20">
+      <target xmi:type="core:ViewContainer" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+      <semanticElements xmi:type="core:ViewContainer" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_hhvNsCG9EfClq5ecsXO2YQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_5IxrQCHPEfCJWIXyWmlHDQ" name="«List»  SearchList" tooltipText="List SearchList" width="25" height="12">
+        <target xmi:type="ext:List" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        <semanticElements xmi:type="ext:List" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_5IxrQSHPEfCJWIXyWmlHDQ" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="209,209,209" backgroundColor="209,209,209">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Jh7D8CHQEfCJWIXyWmlHDQ" name="«SimpleField»  SearchField: Invalid Type" tooltipText="SimpleField SearchField" width="20" height="3">
+          <target xmi:type="ext:SimpleField" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewComponentParts.0"/>
+          <semanticElements xmi:type="ext:SimpleField" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.0/@viewComponentParts.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Jh85ICHQEfCJWIXyWmlHDQ" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="__tYUoCG3EfCvMe3YX1hBgw"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Rwp6kCG9EfClq5ecsXO2YQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.rse.ifml.dop.extension.design/description/dop_extension.odesign#//@ownedViewpoints[name='IFML_DOP_Extension']/@ownedRepresentationExtensions[name='IFML%20DOP%20Extension']/@layers[name='DOP%20Layer']"/>
     <target xmi:type="core:IFMLModel" href="main.core#/"/>
