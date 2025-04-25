@@ -48,6 +48,14 @@
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_MclyYCHdEfCEb5aNlQzcmQ" name="ReviewManagement">
+      <viewElements xsi:type="core:ViewContainer" id="_O5RQMCHdEfCEb5aNlQzcmQ" name="Card Review Page">
+        <annotations text="/review"/>
+        <viewElements xsi:type="ext:List" id="_SR8cMCHdEfCEb5aNlQzcmQ" name="Card Review Item">
+          <viewComponentParts xsi:type="core:DataBinding" id="_VQROgCHdEfCEb5aNlQzcmQ" name="Review Item"/>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_zWWGgCG3EfCvMe3YX1hBgw">
     <domainElements xsi:type="core:UMLDomainConcept" id="_zX93ICG3EfCvMe3YX1hBgw" name="SearchFilterImpl">
