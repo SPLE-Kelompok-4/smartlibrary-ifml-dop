@@ -104,7 +104,71 @@
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_6JCzcCHlEfCaKuf-iBCYnQ" name="CommunityContent" isXOR="true"/>
+    <interactionFlowModelElements xsi:type="core:ViewContainer"
+      id="_6JCzcCHlEfCaKuf-iBCYnQ"
+      name="CommunityContent"
+      isXOR="true">
+    <annotations text="/community-content"/>
+    <viewElements xsi:type="dop-extension:Delta"
+        id="_deltaArticle"
+        name="ArticleVariant">
+      <annotations text="/community-content/article"/>
+      <viewElements xsi:type="core:ViewContainer"
+          id="_vcArticle"
+          name="Article">
+        <viewElements xsi:type="ext:List"
+            id="_listArticles"
+            name="ListArticles">
+          <viewComponentParts xsi:type="core:DataBinding"
+              id="_dbListArticles"
+              name="ArticleList"
+              uniformResourceIdentifier="call/article/list"/>
+        </viewElements>
+        <viewElements xsi:type="core:ViewContainer"
+            id="_articleDetail"
+            name="ArticleDetail">
+          <annotations text="/community-content/article/{id}"/>
+        </viewElements>
+        <viewElements xsi:type="core:ViewContainer"
+            id="_articleForm"
+            name="ArticleForm">
+          <annotations text="/community-content/article/form"/>
+        </viewElements>
+      </viewElements>
+    </viewElements>
+    <viewElements xsi:type="dop-extension:Delta"
+        id="_deltaThread"
+        name="ForumThreadVariant">
+      <annotations text="/community-content/thread"/>
+      <viewElements xsi:type="core:ViewContainer"
+          id="_vcForumThread"
+          name="ForumThread">
+        <viewElements xsi:type="ext:List"
+            id="_listThreads"
+            name="ListThreads">
+          <viewComponentParts xsi:type="core:DataBinding"
+              id="_dbListThreads"
+              name="ThreadList"
+              uniformResourceIdentifier="call/thread/list"/>
+        </viewElements>
+        <viewElements xsi:type="core:ViewContainer"
+            id="_threadDetail"
+            name="ThreadDetail">
+          <annotations text="/community-content/thread/{id}"/>
+        </viewElements>
+        <viewElements xsi:type="core:ViewContainer"
+            id="_threadForm"
+            name="ThreadForm">
+          <annotations text="/community-content/thread/form"/>
+        </viewElements>
+        <viewElements xsi:type="core:ViewContainer"
+            id="_commentForm"
+            name="CommentForm">
+          <annotations text="/community-content/thread/{id}/comment"/>
+        </viewElements>
+      </viewElements>
+    </viewElements>
+  </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_TzyRsScoEfCOXL3PayOh8w">
     <domainElements xsi:type="core:UMLDomainConcept" id="_Tz4YUCcoEfCOXL3PayOh8w" name="SearchFilterImpl">
