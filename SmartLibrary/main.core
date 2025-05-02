@@ -7,7 +7,7 @@
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_PfPksCHVEfCzNc21ieZknA" name="WishlistManagement">
-      <viewElements xsi:type="core:ViewContainer" id="_hRyZQCHVEfCzNc21ieZknA" name="Card Wishlist Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.14/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_hRyZQCHVEfCzNc21ieZknA" name="Card Wishlist Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/item/wishlist"/>
         <viewElements xsi:type="ext:List" id="_wgafkCHVEfCzNc21ieZknA" name="Card Wishlist Item">
           <viewComponentParts xsi:type="core:DataBinding" id="_6cOocCHVEfCzNc21ieZknA" name="Wishlist Item"/>
@@ -18,33 +18,90 @@
       <annotations text="/"/>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3MjgECHYEfC3g9ZlfBzNfA" name="EBookDisplay" isXOR="true">
-      <viewElements xsi:type="core:ViewContainer" id="_J_R_QCHZEfC3g9ZlfBzNfA" name="EBook Display Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_J_R_QCHZEfC3g9ZlfBzNfA" name="EBook Display Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.3/@actions.0/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/ebook"/>
+        <viewElementEvents id="_r_NmACdLEfCRHt01V0Fw4g" name="Add EBook">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_vPMwECdLEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_f7kQYCHZEfC3g9ZlfBzNfA" name="Card EBook">
           <viewComponentParts xsi:type="core:DataBinding" id="_mKJSgCHZEfC3g9ZlfBzNfA" name="List EBook" uniformResourceIdentifier="call/ebook/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ytqdcCHZEfC3g9ZlfBzNfA" name="EBook Title" featureConcept="//@domainModel/@domainElements.22"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_z4WH4CHZEfC3g9ZlfBzNfA" name="EBook Author" featureConcept="//@domainModel/@domainElements.23"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_uLI3kCc2EfCRHt01V0Fw4g" name="image" featureConcept="//@domainModel/@domainElements.111"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_Rb94MCdIEfCRHt01V0Fw4g" name="Add EBook Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/ebook/add"/>
+        <viewElements xsi:type="ext:Form" id="_UxgQoCdIEfCRHt01V0Fw4g" name="Add EBook">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_NeYg8CdLEfCRHt01V0Fw4g" name="OnSubmit Event">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_WgnWcCdLEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3/@actions.0"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_nbmYQCdIEfCRHt01V0Fw4g" name="EBook Title">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ryqNMCdKEfCRHt01V0Fw4g" name="eBookTitle"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_jQiQkCdJEfCRHt01V0Fw4g" name="EBook Author">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4ym1cCdKEfCRHt01V0Fw4g" name="eBookAuthor"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_jjg28CdJEfCRHt01V0Fw4g" name="EBook ISBN">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_63SqACdKEfCRHt01V0Fw4g" name="ISBN"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_s5ZoQCdJEfCRHt01V0Fw4g" name="EBook description">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_BxjGYCdLEfCRHt01V0Fw4g" name="description"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_tNV38CdJEfCRHt01V0Fw4g" name="EBook Release Date">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_DVvdACdLEfCRHt01V0Fw4g" name="releaseDate"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <actions id="_UuZK4CdLEfCRHt01V0Fw4g" name="Save EBook" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_nHvgwCdLEfCRHt01V0Fw4g">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_oGwGsCdLEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0"/>
+        </actionEvents>
+      </actions>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_5Z7PMCHbEfC3g9ZlfBzNfA" name="DisplayWithPrice" isXOR="true" uses="//@interactionFlowModel/@interactionFlowModelElements.3">
-      <viewElements xsi:type="dop-extension:Delta" id="_8M4fACHbEfC3g9ZlfBzNfA" name="EBook Display Page With Price">
+      <viewElements xsi:type="dop-extension:Delta" id="_8M4fACHbEfC3g9ZlfBzNfA" name="EBook Card Page With Price">
         <annotations text="/ebook-price"/>
-        <viewElements xsi:type="dop-extension:ModifiedList" id="_H098cCHcEfC3g9ZlfBzNfA" name="List EBook With Price">
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_H098cCHcEfC3g9ZlfBzNfA" name="List EBook With Price" modifies="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElements.0">
           <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_Js5HYCHcEfC3g9ZlfBzNfA" name="List EBook With Price" uniformResourceIdentifier="call/displaywithprice/list">
             <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_UvQBkCHcEfC3g9ZlfBzNfA" name="price" featureConcept="//@domainModel/@domainElements.30"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>
+      <viewElements xsi:type="dop-extension:ModifiedViewContainer" id="_7An6QCdMEfCRHt01V0Fw4g" name="Add EBook With Price Page">
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_-6gLUCdLEfCRHt01V0Fw4g" name="Add EBook With Price" modifies="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.1/@viewElements.0">
+          <viewComponentParts xsi:type="dop-extension:AddedSimpleField" id="_CXFm8CdMEfCRHt01V0Fw4g" name="EBook Price">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_JktEMCdMEfCRHt01V0Fw4g" name="price"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_fjve4CHcEfC3g9ZlfBzNfA" name="DisplayWithImage" isXOR="true" uses="//@interactionFlowModel/@interactionFlowModelElements.3">
-      <viewElements xsi:type="dop-extension:Delta" id="_hBMUUCHcEfC3g9ZlfBzNfA" name="EBook Display Page With Image">
+      <viewElements xsi:type="dop-extension:Delta" id="_hBMUUCHcEfC3g9ZlfBzNfA" name="EBook Card Page With Image">
         <annotations text="/ebook-image"/>
-        <viewElements xsi:type="dop-extension:ModifiedList" id="_nWOjwCHcEfC3g9ZlfBzNfA" name="Modified List">
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_nWOjwCHcEfC3g9ZlfBzNfA" name="List EBook With Image" modifies="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElements.0">
           <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_pYZP0CHcEfC3g9ZlfBzNfA" name="List EBook With Image" uniformResourceIdentifier="call/displaywithimage/list">
             <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_qei_kCHcEfC3g9ZlfBzNfA" name="image" featureConcept="//@domainModel/@domainElements.111"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="dop-extension:ModifiedViewContainer" id="_c7hH4CdMEfCRHt01V0Fw4g" name="Add EBook With Image Page">
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_f5cRkCdMEfCRHt01V0Fw4g" name="Add EBook With Image" modifies="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.1/@viewElements.0">
+          <viewComponentParts xsi:type="dop-extension:AddedSimpleField" id="_ieC8UCdMEfCRHt01V0Fw4g" name="image">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_jdXrUCdMEfCRHt01V0Fw4g" name="image"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </viewComponentParts>
         </viewElements>
       </viewElements>
@@ -104,71 +161,50 @@
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="core:ViewContainer"
-      id="_6JCzcCHlEfCaKuf-iBCYnQ"
-      name="CommunityContent"
-      isXOR="true">
-    <annotations text="/community-content"/>
-    <viewElements xsi:type="dop-extension:Delta"
-        id="_deltaArticle"
-        name="ArticleVariant">
-      <annotations text="/community-content/article"/>
-      <viewElements xsi:type="core:ViewContainer"
-          id="_vcArticle"
-          name="Article">
-        <viewElements xsi:type="ext:List"
-            id="_listArticles"
-            name="ListArticles">
-          <viewComponentParts xsi:type="core:DataBinding"
-              id="_dbListArticles"
-              name="ArticleList"
-              uniformResourceIdentifier="call/article/list"/>
-        </viewElements>
-        <viewElements xsi:type="core:ViewContainer"
-            id="_articleDetail"
-            name="ArticleDetail">
-          <annotations text="/community-content/article/{id}"/>
-        </viewElements>
-        <viewElements xsi:type="core:ViewContainer"
-            id="_articleForm"
-            name="ArticleForm">
-          <annotations text="/community-content/article/form"/>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_6JCzcCHlEfCaKuf-iBCYnQ" name="CommunityContent" isXOR="true">
+      <annotations text="/community-content"/>
+      <viewElements xsi:type="dop-extension:Delta" id="_deltaArticle" name="ArticleVariant">
+        <annotations text="/community-content/article"/>
+        <viewElements xsi:type="core:ViewContainer" id="_vcArticle" name="Article">
+          <viewElements xsi:type="ext:List" id="_listArticles" name="ListArticles">
+            <viewComponentParts xsi:type="core:DataBinding" id="_dbListArticles" name="ArticleList" uniformResourceIdentifier="call/article/list"/>
+          </viewElements>
+          <viewElements xsi:type="core:ViewContainer" id="_articleDetail" name="ArticleDetail">
+            <annotations text="/community-content/article/{id}"/>
+          </viewElements>
+          <viewElements xsi:type="core:ViewContainer" id="_articleForm" name="ArticleForm">
+            <annotations text="/community-content/article/form"/>
+          </viewElements>
         </viewElements>
       </viewElements>
-    </viewElements>
-    <viewElements xsi:type="dop-extension:Delta"
-        id="_deltaThread"
-        name="ForumThreadVariant">
-      <annotations text="/community-content/thread"/>
-      <viewElements xsi:type="core:ViewContainer"
-          id="_vcForumThread"
-          name="ForumThread">
-        <viewElements xsi:type="ext:List"
-            id="_listThreads"
-            name="ListThreads">
-          <viewComponentParts xsi:type="core:DataBinding"
-              id="_dbListThreads"
-              name="ThreadList"
-              uniformResourceIdentifier="call/thread/list"/>
-        </viewElements>
-        <viewElements xsi:type="core:ViewContainer"
-            id="_threadDetail"
-            name="ThreadDetail">
-          <annotations text="/community-content/thread/{id}"/>
-        </viewElements>
-        <viewElements xsi:type="core:ViewContainer"
-            id="_threadForm"
-            name="ThreadForm">
-          <annotations text="/community-content/thread/form"/>
-        </viewElements>
-        <viewElements xsi:type="core:ViewContainer"
-            id="_commentForm"
-            name="CommentForm">
-          <annotations text="/community-content/thread/{id}/comment"/>
+      <viewElements xsi:type="dop-extension:Delta" id="_deltaThread" name="ForumThreadVariant">
+        <annotations text="/community-content/thread"/>
+        <viewElements xsi:type="core:ViewContainer" id="_vcForumThread" name="ForumThread">
+          <viewElements xsi:type="ext:List" id="_listThreads" name="ListThreads">
+            <viewComponentParts xsi:type="core:DataBinding" id="_dbListThreads" name="ThreadList" uniformResourceIdentifier="call/thread/list"/>
+          </viewElements>
+          <viewElements xsi:type="core:ViewContainer" id="_threadDetail" name="ThreadDetail">
+            <annotations text="/community-content/thread/{id}"/>
+          </viewElements>
+          <viewElements xsi:type="core:ViewContainer" id="_threadForm" name="ThreadForm">
+            <annotations text="/community-content/thread/form"/>
+          </viewElements>
+          <viewElements xsi:type="core:ViewContainer" id="_commentForm" name="CommentForm">
+            <annotations text="/community-content/thread/{id}/comment"/>
+          </viewElements>
         </viewElements>
       </viewElements>
-    </viewElements>
-  </interactionFlowModelElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_z_aTkCdHEfCRHt01V0Fw4g" name="WishlistManagement">
+      <viewElementEvents id="_4W_X0CdHEfCRHt01V0Fw4g" name="WishlistManagement">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_6ASQ4CdHEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_0N3mUCdHEfCRHt01V0Fw4g" name="ReviewManagement">
+      <viewElementEvents id="_4HduECdHEfCRHt01V0Fw4g" name="ReviewManagement">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_8LDfUCdHEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0"/>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_TzyRsScoEfCOXL3PayOh8w">
     <domainElements xsi:type="core:UMLDomainConcept" id="_Tz4YUCcoEfCOXL3PayOh8w" name="SearchFilterImpl">
