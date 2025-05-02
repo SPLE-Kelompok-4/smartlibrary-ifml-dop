@@ -10,7 +10,7 @@
       <viewElements xsi:type="core:ViewContainer" id="_hRyZQCHVEfCzNc21ieZknA" name="Card Wishlist Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/item/wishlist"/>
         <viewElements xsi:type="ext:List" id="_wgafkCHVEfCzNc21ieZknA" name="Card Wishlist Item">
-          <viewComponentParts xsi:type="core:DataBinding" id="_6cOocCHVEfCzNc21ieZknA" name="Wishlist Item"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_6cOocCHVEfCzNc21ieZknA" name="Wishlist Item" uniformResourceIdentifier="call/wishlistmanagement/list"/>
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>

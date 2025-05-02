@@ -13,7 +13,7 @@
     <semanticResources>platform:/resource/SmartLibrary-UML-DOP/SmartLibrary/SmartLibrary.uml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_31P6wCG3EfCvMe3YX1hBgw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RwrIsCG9EfClq5ecsXO2YQ" name="SmartLibrary" repPath="#_RwpTgCG9EfClq5ecsXO2YQ" changeId="1746187715020">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RwrIsCG9EfClq5ecsXO2YQ" name="SmartLibrary" repPath="#_RwpTgCG9EfClq5ecsXO2YQ" changeId="1746199726802">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="main.core#/"/>
       </ownedRepresentationDescriptors>
@@ -2154,7 +2154,7 @@
               <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']"/>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ytxyMCHZEfC3g9ZlfBzNfA" name="«VisualizationAttribute»  EBook Title: String" tooltipText="VisualizationAttribute EBook Title" width="20" height="4">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ytxyMCHZEfC3g9ZlfBzNfA" name="«VisualizationAttribute»  EBook Title: Invalid FeatureConcept" tooltipText="VisualizationAttribute EBook Title" width="20" height="4">
               <target xmi:type="core:VisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0"/>
               <semanticElements xmi:type="core:VisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0"/>
               <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2165,7 +2165,7 @@
               </ownedStyle>
               <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@subContainerMappings[name='SubViewComponentPart']"/>
             </ownedDiagramElements>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_z4WH4SHZEfC3g9ZlfBzNfA" name="«VisualizationAttribute»  EBook Author: String" tooltipText="VisualizationAttribute EBook Author" width="20" height="4">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_z4WH4SHZEfC3g9ZlfBzNfA" name="«VisualizationAttribute»  EBook Author: Invalid FeatureConcept" tooltipText="VisualizationAttribute EBook Author" width="20" height="4">
               <target xmi:type="core:VisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.1"/>
               <semanticElements xmi:type="core:VisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.1"/>
               <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2386,7 +2386,7 @@
               <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']"/>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_UvXWUCHcEfC3g9ZlfBzNfA" name="«AddedVisualizationAttribute»  price: Integer" tooltipText="AddedVisualizationAttribute price" width="20" height="4">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_UvXWUCHcEfC3g9ZlfBzNfA" name="«AddedVisualizationAttribute»  price: Invalid FeatureConcept" tooltipText="AddedVisualizationAttribute price" width="20" height="4">
               <target xmi:type="dop-extension:AddedVisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0"/>
               <semanticElements xmi:type="dop-extension:AddedVisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0"/>
               <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2486,7 +2486,7 @@
               <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']"/>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_qei_kSHcEfC3g9ZlfBzNfA" name="«AddedVisualizationAttribute»  image: String" tooltipText="AddedVisualizationAttribute image" width="20" height="4">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_qei_kSHcEfC3g9ZlfBzNfA" name="«AddedVisualizationAttribute»  image: Invalid FeatureConcept" tooltipText="AddedVisualizationAttribute image" width="20" height="4">
               <target xmi:type="dop-extension:AddedVisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.5/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0"/>
               <semanticElements xmi:type="dop-extension:AddedVisualizationAttribute" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.5/@viewElements.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0"/>
               <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
