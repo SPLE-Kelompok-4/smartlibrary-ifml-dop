@@ -2,8 +2,12 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_zWROACG3EfCvMe3YX1hBgw">
   <interactionFlowModel id="_hgyygCG9EfClq5ecsXO2YQ">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_hhKl8CG9EfClq5ecsXO2YQ" name="SearchFilter" isXOR="true">
-      <viewElements xsi:type="ext:List" id="_5IxEMCHPEfCJWIXyWmlHDQ" name="SearchList">
-        <viewComponentParts xsi:type="ext:SimpleField" id="_JhzIICHQEfCJWIXyWmlHDQ" name="SearchField"/>
+      <viewElements xsi:type="core:ViewContainer" id="_8hivcCynEfC-mZ5K6_653A" name="SearchPage">
+        <annotations text="/search"/>
+        <viewElements xsi:type="ext:List" id="_nXZbACypEfC-mZ5K6_653A" name="List">
+          <viewComponentParts xsi:type="ext:SimpleField" id="_1hID4CyrEfC-mZ5K6_653A" name="SearchBar"/>
+          <viewComponentParts xsi:type="ext:SelectionField" id="_xFCoMCytEfC-mZ5K6_653A" name="Filter"/>
+        </viewElements>
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_PfPksCHVEfCzNc21ieZknA" name="WishlistManagement" isXOR="true">
