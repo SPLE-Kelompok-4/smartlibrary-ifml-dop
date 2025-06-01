@@ -11,12 +11,34 @@
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_PfPksCHVEfCzNc21ieZknA" name="WishlistManagement" isXOR="true">
-      <viewElements xsi:type="core:ViewContainer" id="_hRyZQCHVEfCzNc21ieZknA" name="Card Wishlist Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.11/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/item/wishlist"/>
-        <viewElements xsi:type="ext:List" id="_wgafkCHVEfCzNc21ieZknA" name="Card Wishlist Item">
-          <viewComponentParts xsi:type="core:DataBinding" id="_6cOocCHVEfCzNc21ieZknA" name="Wishlist Item" uniformResourceIdentifier="call/wishlistmanagement/list"/>
+      <viewElements xsi:type="core:ViewContainer" id="_uYFFED6oEfC0ItzKuxYxfw" name="Card Wishlist Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.11/@viewElementEvents.0/@outInteractionFlows.1 //@interactionFlowModel/@interactionFlowModelElements.1/@actions.0/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/wishlist"/>
+        <viewElementEvents id="_7sw08D6tEfC0ItzKuxYxfw" name="Add Wishlist Item">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_8u8DoD6tEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_yhPdYD6pEfC0ItzKuxYxfw" name="List Wishlist Item">
+          <viewComponentParts xsi:type="core:DataBinding" id="_3lYssD6pEfC0ItzKuxYxfw" name="Wishlist Item" uniformResourceIdentifier="call/wishlistitem/list">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_FZ1pID6sEfC0ItzKuxYxfw" name="WishlistItem Name"/>
+          </viewComponentParts>
         </viewElements>
       </viewElements>
+      <viewElements xsi:type="core:ViewContainer" id="_QMMYcD6sEfC0ItzKuxYxfw" name="Add Wishlist Item Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_lGkOsD6uEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0"/>
+        <viewElements xsi:type="ext:Form" id="_W6YuwD6sEfC0ItzKuxYxfw" name="Add Wishlist Item">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_fCtO0D6uEfC0ItzKuxYxfw" name="Submit"/>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_cx7J4D6sEfC0ItzKuxYxfw" name="Wishlist Item Name">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_lfW0ED6sEfC0ItzKuxYxfw" name="name"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <actions id="_jEFZkD6uEfC0ItzKuxYxfw" name="Add Wishlist Item" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_uuo8MD6uEfC0ItzKuxYxfw">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_v-urED6uEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
+        </actionEvents>
+      </actions>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_tV8AQCHYEfC3g9ZlfBzNfA" name="Home" isXOR="true">
       <annotations text="/"/>
@@ -71,6 +93,7 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_oGwGsCdLEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.0"/>
         </actionEvents>
       </actions>
+      <actions id="_F5vK0D6kEfC0ItzKuxYxfw" name="Action"/>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_5Z7PMCHbEfC3g9ZlfBzNfA" name="DisplayWithPrice" isXOR="true" uses="//@interactionFlowModel/@interactionFlowModelElements.3">
       <viewElements xsi:type="dop-extension:Delta" id="_8M4fACHbEfC3g9ZlfBzNfA" name="EBook Card Page With Price">
@@ -167,7 +190,8 @@
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_z_aTkCdHEfCRHt01V0Fw4g" name="WishlistManagement">
       <viewElementEvents id="_4W_X0CdHEfCRHt01V0Fw4g" name="WishlistManagement">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_6ASQ4CdHEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_6ASQ4CdHEfCRHt01V0Fw4g"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_6eSXAD6qEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
       </viewElementEvents>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_0N3mUCdHEfCRHt01V0Fw4g" name="ReviewManagement">
@@ -256,6 +280,24 @@
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_rYySMCy8EfCY5v3uxizkyA" name="topic">
               <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_f7FL0D6vEfC0ItzKuxYxfw" name="WishlistWithDescription" isXOR="true">
+      <viewElements xsi:type="dop-extension:Delta" id="_vAvjYD6vEfC0ItzKuxYxfw" name="Card Wishlist Page With Description">
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_6XojID6vEfC0ItzKuxYxfw" name="List Wishlist With Description">
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_BG9h4D6wEfC0ItzKuxYxfw" name="List Wishlist Item With Description">
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_FuV8sD6wEfC0ItzKuxYxfw" name="description"/>
+          </viewComponentParts>
+        </viewElements>
+      </viewElements>
+      <viewElements xsi:type="dop-extension:ModifiedViewContainer" id="_QnJSQD6wEfC0ItzKuxYxfw" name="Add Wishlist Item With Description Page">
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_XjCGUD6wEfC0ItzKuxYxfw" name="Add Wishlist With Description">
+          <viewComponentParts xsi:type="dop-extension:AddedSimpleField" id="_cpUqsD6wEfC0ItzKuxYxfw" name="description">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_iOh_sD6wEfC0ItzKuxYxfw" name="description"/>
             <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </viewComponentParts>
         </viewElements>
