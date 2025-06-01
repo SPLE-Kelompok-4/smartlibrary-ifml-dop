@@ -23,9 +23,11 @@
         </viewElements>
       </viewElements>
       <viewElements xsi:type="core:ViewContainer" id="_QMMYcD6sEfC0ItzKuxYxfw" name="Add Wishlist Item Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_lGkOsD6uEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0"/>
+        <annotations text="/wishlist/add"/>
         <viewElements xsi:type="ext:Form" id="_W6YuwD6sEfC0ItzKuxYxfw" name="Add Wishlist Item">
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_fCtO0D6uEfC0ItzKuxYxfw" name="Submit"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_fCtO0D6uEfC0ItzKuxYxfw" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_LlYPQD61EfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0"/>
+          </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_cx7J4D6sEfC0ItzKuxYxfw" name="Wishlist Item Name">
             <annotations text="Required"/>
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_lfW0ED6sEfC0ItzKuxYxfw" name="name"/>
@@ -33,7 +35,7 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <actions id="_jEFZkD6uEfC0ItzKuxYxfw" name="Add Wishlist Item" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1/@outInteractionFlows.0">
+      <actions id="_jEFZkD6uEfC0ItzKuxYxfw" name="Add Wishlist Item" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_uuo8MD6uEfC0ItzKuxYxfw">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_v-urED6uEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
@@ -287,6 +289,7 @@
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="dop-extension:Delta" id="_f7FL0D6vEfC0ItzKuxYxfw" name="WishlistWithDescription" isXOR="true">
       <viewElements xsi:type="dop-extension:Delta" id="_vAvjYD6vEfC0ItzKuxYxfw" name="Card Wishlist Page With Description">
+        <annotations text="/wishlist-description"/>
         <viewElements xsi:type="dop-extension:ModifiedList" id="_6XojID6vEfC0ItzKuxYxfw" name="List Wishlist With Description">
           <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_BG9h4D6wEfC0ItzKuxYxfw" name="List Wishlist Item With Description">
             <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_FuV8sD6wEfC0ItzKuxYxfw" name="description"/>
