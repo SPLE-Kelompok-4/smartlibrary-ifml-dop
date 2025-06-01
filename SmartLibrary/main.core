@@ -11,7 +11,7 @@
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_PfPksCHVEfCzNc21ieZknA" name="WishlistManagement" isXOR="true">
-      <viewElements xsi:type="core:ViewContainer" id="_uYFFED6oEfC0ItzKuxYxfw" name="Card Wishlist Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.11/@viewElementEvents.0/@outInteractionFlows.1 //@interactionFlowModel/@interactionFlowModelElements.1/@actions.0/@actionEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_uYFFED6oEfC0ItzKuxYxfw" name="Card Wishlist Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@actions.0/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/wishlist"/>
         <viewElementEvents id="_7sw08D6tEfC0ItzKuxYxfw" name="Add Wishlist Item">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_8u8DoD6tEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1"/>
@@ -136,7 +136,7 @@
       </viewElements>
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_MclyYCHdEfCEb5aNlQzcmQ" name="ReviewManagement">
-      <viewElements xsi:type="core:ViewContainer" id="_O5RQMCHdEfCEb5aNlQzcmQ" name="Card Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_O5RQMCHdEfCEb5aNlQzcmQ" name="Card Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.11/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/review"/>
         <viewElements xsi:type="ext:List" id="_SR8cMCHdEfCEb5aNlQzcmQ" name="Card Review Item">
           <viewComponentParts xsi:type="core:DataBinding" id="_VQROgCHdEfCEb5aNlQzcmQ" name="Review Item"/>
@@ -190,12 +190,6 @@
         </viewElements>
       </viewElements>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_z_aTkCdHEfCRHt01V0Fw4g" name="WishlistManagement">
-      <viewElementEvents id="_4W_X0CdHEfCRHt01V0Fw4g" name="WishlistManagement">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_6ASQ4CdHEfCRHt01V0Fw4g"/>
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_6eSXAD6qEfC0ItzKuxYxfw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.0"/>
-      </viewElementEvents>
-    </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_0N3mUCdHEfCRHt01V0Fw4g" name="ReviewManagement">
       <viewElementEvents id="_4HduECdHEfCRHt01V0Fw4g" name="ReviewManagement">
         <outInteractionFlows xsi:type="core:NavigationFlow" id="_8LDfUCdHEfCRHt01V0Fw4g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.6/@viewElements.0"/>
@@ -203,10 +197,10 @@
     </interactionFlowModelElements>
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_J6yqsCy3EfCY5v3uxizkyA" name="CommunityContent" isXOR="true">
       <viewElementEvents id="_eD9GcCy5EfCY5v3uxizkyA" name="ViewElement Event"/>
-      <viewElements xsi:type="core:ViewContainer" id="_aEbnwCy3EfCY5v3uxizkyA" name="CommunityContent Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.13/@actions.0/@actionEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_aEbnwCy3EfCY5v3uxizkyA" name="CommunityContent Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.12/@actions.0/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/communitycontent"/>
         <viewElementEvents id="_Em9HoCy5EfCY5v3uxizkyA" name="Create Content">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Igou8Cy5EfCY5v3uxizkyA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.13/@viewElements.1"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Igou8Cy5EfCY5v3uxizkyA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElements.1"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_enaDsCy3EfCY5v3uxizkyA" name="CommunityContent">
           <viewComponentParts xsi:type="core:DataBinding" id="_in3ocCy3EfCY5v3uxizkyA" name="List CommunityContent">
@@ -214,10 +208,10 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <viewElements xsi:type="core:ViewContainer" id="_SUJF0Cy4EfCY5v3uxizkyA" name="CreateContent Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.13/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewContainer" id="_SUJF0Cy4EfCY5v3uxizkyA" name="CreateContent Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <viewElements xsi:type="ext:Form" id="_WQSLQCy4EfCY5v3uxizkyA" name="Create Content">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_LtE1wCy5EfCY5v3uxizkyA" name="OnSubmit Event">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_aPL0UCy5EfCY5v3uxizkyA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.13/@actions.0"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_aPL0UCy5EfCY5v3uxizkyA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.12/@actions.0"/>
           </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_avXlsCy4EfCY5v3uxizkyA" name="author">
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_zYP_8Cy4EfCY5v3uxizkyA" name="author">
@@ -227,10 +221,10 @@
           </viewComponentParts>
         </viewElements>
       </viewElements>
-      <actions id="_UF2ekCy5EfCY5v3uxizkyA" name="Create CommunityContent" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.13/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <actions id="_UF2ekCy5EfCY5v3uxizkyA" name="Create CommunityContent" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_gqY9MCy5EfCY5v3uxizkyA">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_iofooCy5EfCY5v3uxizkyA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.13/@viewElements.0"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_iofooCy5EfCY5v3uxizkyA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.12/@viewElements.0"/>
         </actionEvents>
       </actions>
     </interactionFlowModelElements>
